@@ -2,14 +2,18 @@
   "name": "nearby-metro-finder",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://jijishthomas.github.io/kochi-metro-finder",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.0",
+    "gh-pages": "^4.0.0",
     "leaflet": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
